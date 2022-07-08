@@ -25,6 +25,7 @@ const isAuthenticated = async (req, res, next) => {
       token: req.headers.authorization.replace("Bearer ", ""),
     });
     if (!user) {
+      console.log("unauthorized");
       res.status(401).json({ error: "Unauthorized" });
     } else {
       req.user = user;
