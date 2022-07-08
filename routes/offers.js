@@ -64,7 +64,7 @@ router.post(
 
       const result = await cloudinary.uploader.upload(myPictureinBase64, {
         folder: "vinted/offers",
-        public_id: `${req.body.title} - ${newOffer._id}`,
+        /* public_id: `${req.body.title} - ${newOffer._id}`, */
       });
       newOffer.product_image = result;
 
