@@ -3,11 +3,12 @@ const express = require("express");
 const router = express.Router();
 const cloudinary = require("cloudinary").v2;
 const fileupload = require("express-fileupload");
+require(`dotenv`).config();
 
 cloudinary.config({
-  cloud_name: "djezwmdxv",
-  api_key: "374282234991229",
-  api_secret: "HNkjQNaFqPt-qu2elHuji7rXz_4",
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_KEY,
+  api_secret: process.env.CLOUDINARY_SECRET,
 });
 
 const Offer = require("../models/Offer");

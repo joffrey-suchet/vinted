@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-
-mongoose.connect("mongodb://127.0.0.1/Vinted");
+require(`dotenv`).config();
+mongoose.connect(process.env.MONGODB_URI);
 
 const app = express();
 app.use(express.json());
@@ -16,6 +16,6 @@ app.all("*", (req, res) => {
   res.status(400).json("not found");
 });
 
-app.listen(3006, () => {
-  console.log("server has started !");
+app.listen(process.env.PORT, () => {
+  console.log("Server started");
 });
