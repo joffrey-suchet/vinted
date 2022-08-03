@@ -1,32 +1,6 @@
 {
-  "name": "vinted",
-  "version": "1.0.0",
-  "description": "\"#my-respository\" \r \"# vinted\"",
-  "main": "index.js",
   "dependencies": {
-    "cloudinary": "^1.30.0",
-    "cors": "^2.8.5",
-    "crypto-js": "^4.1.1",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "express-fileupload": "^1.4.0",
-    "fileupload": "^1.0.0",
-    "mongoose": "^6.4.3",
-    "uid2": "^1.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joffrey-suchet/vinted.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joffrey-suchet/vinted/issues"
-  },
-  "homepage": "https://github.com/joffrey-suchet/vinted#readme"
+    "@stripe/react-stripe-js": "^1.10.0",
+    "@stripe/stripe-js": "^1.34.0"
+  }
 }
