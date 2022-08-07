@@ -125,6 +125,7 @@ input {
   width: 30rem;
   border: solid blue 2px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .form h1 {
@@ -134,7 +135,7 @@ input {
   margin-bottom: 4rem;
   height: 2.5rem;
   background-color: inherit;
-  border-bottom: red solid 1px;
+  border-bottom: #0cb1ba solid 1px;
 }
 
 .loginSubmit form {
@@ -149,6 +150,33 @@ input {
 
 .publish {
   width: 40rem;
-  border: solid red 2px;
+  /* border: solid red 2px; */
   text-align: center;
+  margin: 0 auto;
+}
+
+.offer-page {
+  /* border: solid red 2px; */
+  display: flex;
+  justify-content: space-around;
+  width: 60rem;
+  margin: 0 auto;
+}
+.imgOffer {
+  max-width: 450px;
+}
+.imgOffer img {
+  height: 30rem;
+}
+.card {
+  /* border: solid blue 2px; */
+  background-color: lightgray;
+  padding: 20px;
+}
+
+.payment {
+  display: flex;
+  justify-content: space-around;
+  width: 60rem;
+  margin: 0 auto;
 }

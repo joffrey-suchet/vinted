@@ -22,8 +22,8 @@ const Offer = () => {
   return isLoading === true ? (
     <div>En cours de chargement</div>
   ) : (
-    <div>
-      <div>
+    <div className="offer-page">
+      <div className="imgOffer">
         <img src={data.product_image.url} alt="" />
       </div>
       <div className="card">

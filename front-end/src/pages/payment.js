@@ -21,24 +21,30 @@ const Payment = ({ token }) => {
   ).toFixed(2);
 
   return token ? (
-    <div className="payment">
-      <h1>Paiement</h1>
-      <img src={picture} alt="pictureOffer" style={{ width: "200px" }} />
-      <h4>{title}</h4>
-
-      <h4>Commande</h4>
-      <span>{price} €</span>
-
-      <h4>Frais protection acheteurs</h4>
-      <span>{protectiveCost}</span>
-      <h4>Frais de port</h4>
-      <span>{deliveryCost}</span>
-      <h3>total</h3>
-      <span>{total}</span>
-      <Elements stripe={stripePromise}>
-        <CheckoutForm title={title} total={total} />
-      </Elements>
-    </div>
+    <section>
+      <div>
+        <h1>Paiement</h1>
+      </div>
+      <div className="payment">
+        <div>
+          <img src={picture} alt="pictureOffer" style={{ width: "200px" }} />
+        </div>
+        <div>
+          <h4>{title}</h4>
+          <h4>Commande</h4>
+          <span>{price} €</span>
+          <h4>Frais protection acheteurs</h4>
+          <span>{protectiveCost}</span>
+          <h4>Frais de port</h4>
+          <span>{deliveryCost}</span>
+          <h3>total</h3>
+          <span>{total}</span>
+          <Elements stripe={stripePromise}>
+            <CheckoutForm title={title} total={total} />
+          </Elements>
+        </div>
+      </div>
+    </section>
   ) : (
     <Navigate to="/login" />
   );
